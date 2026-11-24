@@ -38,6 +38,13 @@ remove_action('wp_head', 'rel_canonical');           // canonical виводит
 remove_action('wp_head', 'feed_links_extra', 3);
 remove_action('wp_head', 'wp_oembed_add_discovery_links');
 add_filter('the_generator', '__return_empty_string');
+remove_action('wp_head', 'rest_output_link_wp_head');
+remove_action('template_redirect', 'rest_output_link_header', 11);
+// стилі блокового редактора (global styles, SVG-фільтри) на фронті не потрібні
+remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
+remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
+add_filter('should_load_separate_core_block_assets', '__return_true');
 
 /* ---------- коментарі вимкнені ---------- */
 add_filter('comments_open', '__return_false', 20);
