@@ -1,0 +1,4 @@
+# Службові файли теми не віддаються браузеру
+<FilesMatch "^(\.ftp-deploy-sync-state\.json|.*\.(json|md|yml))$">
+  Require all denied
+</FilesMatch>
