@@ -67,3 +67,24 @@ add_action('template_redirect', function () {
 
 /* ---------- в адмінці показати ієрархію сторінок зручно ---------- */
 add_filter('admin_body_class', fn($c) => $c . ' bti-admin');
+
+/* ---------- кеш LiteSpeed: скидати після кожного деплою ---------- */
+// GitHub Actions при кожній заливці оновлює .ftp-deploy-sync-state.json.
+// Якщо файл змінився з минулого разу — очищаємо кеш, щоб правки теми були видні одразу.
+add_action('init', function () {
+    $f = BTI_DIR . '/.ftp-deploy-sync-state.json';
+    $stamp = (is_file($f) ? filemtime($f) : 0) . '|' . BTI_VER;
+    if (get_option('bti_deploy_stamp') === $stamp) return;
+    update_option('bti_deploy_stamp', $stamp, true);
+    bti_purge_cache();
+}, 1);
+
+function bti_purge_cache(): void {
+    do_action('litespeed_purge_all');                         // LiteSpeed Cache
+    if (function_exists('wp_cache_clear_cache')) wp_cache_clear_cache();   // WP Super Cache
+    if (function_exists('rocket_clean_domain')) rocket_clean_domain();     // WP Rocket
+}
+
+// Зміна налаштувань «Сайт БТІ» (телефон, відгуки…) теж має одразу з'являтись на всіх сторінках
+add_action('update_option_bti_settings', 'bti_purge_cache');
+add_action('update_option_bti_reviews_text', 'bti_purge_cache');
