@@ -8,8 +8,8 @@ chips.forEach(c=>c.addEventListener('click',()=>{
   document.getElementById('r-price').textContent=c.dataset.price;
   document.getElementById('r-term').textContent=c.dataset.term;
   const ro=document.getElementById('r-obj');if(ro)ro.textContent=c.dataset.name;
-  const n=c.dataset.name.toLowerCase();
-  document.getElementById('r-btn').textContent='Замовити оцінку: '+n;
+  const n=c.dataset.name.toLowerCase(), rb=document.getElementById('r-btn');
+  rb.textContent=(rb.dataset.prefix||'Замовити оцінку: ')+n;
 }));
 // вкладки услуг
 document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
