@@ -11,7 +11,14 @@
 5. Налаштування → **Сайт БТІ**: перевірити контакти, за бажанням підключити Telegram для заявок.
 
 ## Оновлення теми
-cPanel → Git Version Control → Manage → Pull or Deploy → **Update from Remote** → **Deploy HEAD Commit**.
+Автоматично: кожен `git push` у `main` запускає GitHub Actions (`.github/workflows/deploy.yml`), який по FTPS заливає папку `bti-ocinka/` на хостинг. Статус — вкладка **Actions** у репозиторії.
+
+Налаштування один раз:
+1. cPanel → **FTP Accounts** → створити акаунт (напр. `deploy`) з каталогом `public_html/wp-content/themes/bti-ocinka`.
+2. GitHub → репозиторій → **Settings → Secrets and variables → Actions** → додати `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
+3. Вкладка **Actions** → Deploy theme → **Run workflow** (перший запуск).
+
+Запасний варіант вручну: cPanel → Git Version Control → Update from Remote → Deploy HEAD Commit.
 
 ## Що де редагувати
 - Ціни, терміни, H1, SEO-title/description, «коли потрібна», документи, FAQ — у кожній сторінці, блок «Дані сторінки» під редактором.
