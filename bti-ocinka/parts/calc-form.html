@@ -1,0 +1,13 @@
+<div class="calc-grid"><form id="calc-form" class="calc-form" autocomplete="off" onsubmit="return false">
+<fieldset><legend>Тип угоди</legend><div class="seg"><label><input type="radio" name="deal" value="sale" checked><span>Купівля-продаж</span></label><label><input type="radio" name="deal" value="gift"><span>Дарування</span></label><label><input type="radio" name="deal" value="inherit"><span>Спадщина</span></label></div></fieldset>
+<div class="calc-row"><div><div class="field"><label for="c-object">Що оцінюємо</label><select id="c-object" name="object"><option value="flat">Квартира</option><option value="house">Будинок</option><option value="land">Земельна ділянка</option><option value="comm">Нежитлове приміщення</option><option value="car">Автомобіль</option></select></div>
+<div class="field"><label for="c-value">Оціночна вартість, грн</label><input id="c-value" name="value" type="text" inputmode="numeric" value="2 500 000"></div></div><div>
+<div data-for="sale"><div class="field"><label for="c-saleno">Який це продаж житла у поточному році для продавця</label><select id="c-saleno" name="saleNo"><option value="1">Перший</option><option value="2">Другий</option><option value="3">Третій і більше</option></select></div>
+<label class="check"><input type="checkbox" name="owned3" checked> У власності понад 3 роки</label>
+<label class="check"><input type="checkbox" name="inherited"> Майно отримане у спадщину</label>
+<label class="check"><input type="checkbox" name="firstHome"> Покупець купує житло вперше (без збору до ПФУ)</label>
+<div class="field" data-cost hidden><label for="c-cost">Документально підтверджена ціна придбання, грн</label><input id="c-cost" name="cost" type="text" inputmode="numeric" placeholder="для зменшення бази 18 %"></div></div>
+<div data-for="gift inherit" hidden><div class="field"><label for="c-degree">Хто отримує</label><select id="c-degree" name="degree"><option value="12">Родич 1–2 ступеня (батьки, діти, подружжя, брати/сестри, дід/баба, онуки)</option><option value="other">Інша особа</option></select></div></div>
+<label class="check"><input type="checkbox" name="nonres"> Одна зі сторін — нерезидент України</label></div></div>
+<p class="calc-small">Ставки актуальні на <span id="calc-updated"></span>. Розрахунок орієнтовний, не є податковою консультацією; остаточну суму визначає нотаріус.</p>
+</form><div id="calc-out" class="calc-out" aria-live="polite"></div></div>

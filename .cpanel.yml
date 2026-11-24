@@ -1,0 +1,7 @@
+---
+# cPanel → Git Version Control → «Deploy HEAD Commit» копіює тему в WordPress
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/wp-content/themes/bti-ocinka/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R bti-ocinka/. $DEPLOYPATH

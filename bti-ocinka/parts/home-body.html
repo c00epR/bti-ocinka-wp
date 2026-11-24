@@ -1,0 +1,214 @@
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Оцінка нерухомості за <em>1 день</em> — звіт уже в реєстрі ФДМУ, нотаріус приймає</h1>
+      <p class="lead">Сертифіковані оцінювачі та інженери БТІ в Києві. Робимо оцінку для продажу, спадщини, дарування, іпотеки — і весь пакет документів БТІ під ключ.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#order">Замовити оцінку</a>
+        <a class="btn btn-ghost" href="{{H}}/bti/">Усі послуги БТІ</a>
+      </div>
+      <div class="hero-facts">
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8A5A" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Безкоштовна консультація</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8A5A" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Терміново — за 1 годину</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8A5A" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Оплата після отримання</div>
+      </div>
+    </div>
+
+    <!-- интерактивный «звіт» -->
+    <div class="report" id="calc" aria-label="Швидкий розрахунок вартості оцінки">
+      <div class="report-top">
+        <div><small>Швидкий розрахунок</small><b>Скільки коштує оцінка?</b></div>
+      </div>
+      <div class="report-body">
+        <label class="q">Оберіть, що потрібно оцінити</label>
+        <div class="chips" role="group" aria-label="Тип об'єкта">
+          <button class="chip" aria-pressed="true" data-price="900 грн" data-term="1 день" data-name="Квартира">Квартиру</button>
+          <button class="chip" aria-pressed="false" data-price="900 грн" data-term="1 день" data-name="Житловий будинок">Будинок</button>
+          <button class="chip" aria-pressed="false" data-price="900 грн" data-term="1 день" data-name="Гараж">Гараж</button>
+          <button class="chip" aria-pressed="false" data-price="900 грн" data-term="1 день" data-name="Земельна ділянка">Земельну ділянку</button>
+          <button class="chip" aria-pressed="false" data-price="900 грн" data-term="1–2 дні" data-name="Нежитлове приміщення">Нежитлове</button>
+          <button class="chip" aria-pressed="false" data-price="800 грн" data-term="1 день" data-name="Автомобіль">Авто</button>
+        </div>
+        <div class="result">
+          <div><small>Вартість</small><strong class="price" id="r-price">900 грн</strong></div>
+          <div><small>Готовність</small><strong id="r-term">1 день</strong></div>
+        </div>
+        <a class="btn btn-marker" href="#order" id="r-btn">Замовити оцінку квартири</a>
+        <p class="report-note">Звіт реєструємо у базі ФДМУ — нотаріус приймає. Виїзд не потрібен: достатньо фото документів. Оплата після отримання.</p>
+      </div>
+  </div>
+</section>
+
+<!-- ============ ФАКТЫ ============ -->
+<div class="band">
+  <div class="wrap">
+    <div><b>1 день</b><span>стандартний термін оцінки, терміново — година</span></div>
+    <div><b>до 3 днів</b><span>виготовлення техпаспорта на квартиру чи будинок</span></div>
+    <div><b>Київ і область</b><span>виїзд інженера; решта України — дистанційно</span></div>
+  </div>
+</div>
+
+<!-- ============ УСЛУГИ ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>Послуги та ціни</h2>
+        <p style="margin-top:12px">Ціни фіксовані для стандартних об'єктів. Складні випадки — після консультації.</p>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-panel="p-ocinka">Оцінка майна</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="p-bti">Послуги БТІ</button>
+      </div>
+    </div>
+
+    <div class="panel" id="p-ocinka">
+      <div class="price-grid">
+        <a class="card card-link" href="{{H}}/ocinka/kvartyry/">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg></div>
+          <h3>Оцінка квартири</h3>
+          <p>Для купівлі-продажу, спадщини, дарування, іпотеки. Звіт вносимо до реєстру ФДМУ.</p>
+          <div class="price"><b>900 грн</b><span>1 день</span></div>
+        </a>
+        <a class="card card-link" href="{{H}}/ocinka/budynku/">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M3 11 12 3l9 8"/><path d="M5 10v11h14V10"/><path d="M10 21v-6h4v6"/></svg></div>
+          <h3>Оцінка житлового будинку</h3>
+          <p>Будинок разом із господарськими будівлями. Виїзд оцінювача по Києву та області.</p>
+          <div class="price"><b>900 грн</b><span>1 день</span></div>
+        </a>
+        <a class="card card-link" href="{{H}}/ocinka/harazha/">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 8l9-5 9 5M7 21v-8h10v8"/></svg></div>
+          <h3>Оцінка гаража</h3>
+          <p>Гараж, машиномісце, бокс у кооперативі.</p>
+          <div class="price"><b>900 грн</b><span>1 день</span></div>
+        </a>
+        <a class="card card-link" href="{{H}}/ocinka/komertsiynoi-neruhomosti/">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M3 20h18M4 20V9h16v11M9 20v-5h6v5M8 9V5h8v4"/></svg></div>
+          <h3>Оцінка нежитлового фонду</h3>
+          <p>Офіси, магазини, склади, виробничі приміщення.</p>
+          <div class="price"><b>900 грн</b><span>1–2 дні</span></div>
+        </a>
+        <a class="card card-link" href="{{H}}/ocinka/zemelnoi-dilyanky/">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M3 17l6-10 4 6 3-4 5 8z"/><path d="M3 21h18"/></svg></div>
+          <h3>Оцінка земельної ділянки</h3>
+          <p>Під забудову, сільгосппризначення, присадибні ділянки.</p>
+          <div class="price"><b>900 грн</b><span>1 день</span></div>
+        </a>
+        <a class="card card-link" href="{{H}}/ocinka/avto/">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M5 16l1.5-5h11L19 16"/><rect x="3" y="16" width="18" height="4" rx="1"/><circle cx="7.5" cy="18" r="1"/><circle cx="16.5" cy="18" r="1"/></svg></div>
+          <h3>Оцінка автомобіля</h3>
+          <p>Для нотаріуса, спадщини, продажу, митниці.</p>
+          <div class="price"><b>800 грн</b><span>1 день</span></div>
+        </a>
+        <article class="card" style="background:var(--mist);border-color:transparent;justify-content:center;align-items:flex-start">
+          <h3>Не знайшли свій випадок?</h3>
+          <p>Оцінюємо будь-яке майно, що потребує звіту для нотаріуса, банку чи суду.</p>
+          <a class="btn btn-primary" href="#order" style="margin-top:8px">Отримати консультацію</a>
+        </article>
+      </div>
+      <p style="margin-top:28px;color:var(--ink-2);font-size:15px;max-width:760px">Звіт про оцінку дійсний лише за умови реєстрації в Єдиній базі ФДМУ — без цього нотаріус не може посвідчити угоду. Ми реєструємо кожен звіт і несемо за нього відповідальність.</p>
+    </div>
+
+    <div class="panel" id="p-bti" hidden>
+      <div class="list">
+        <div class="row"><span><a href="{{H}}/bti/tehpasport/na-kvartyru/" style="color:inherit">Техпаспорт на квартиру, гараж, комерційне приміщення</a></span><span class="term">до 3 робочих днів</span><b>від 1200 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/tehpasport/na-budynok/" style="color:inherit">Техпаспорт на будинок</a></span><span class="term">до 3 робочих днів</span><b>від 2500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/dovidka-pro-vidsotok-hotovnosti/" style="color:inherit">Довідка про відсоток готовності об'єкта</a></span><span class="term">від 1 дня</span><b>від 500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/dovidka-pro-znyshchennya/" style="color:inherit">Довідка про знищення об'єкта</a></span><span class="term">від 1 дня</span><b>від 500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/dovidka-pro-vidsutnist-zabudov/" style="color:inherit">Довідка про відсутність забудов</a></span><span class="term">від 1 дня</span><b>500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/dovidka-kharakterystyka/" style="color:inherit">Довідка-характеристика (уточнення метражів)</a></span><span class="term">від 1 дня</span><b>від 500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/akt-obstezhennya/" style="color:inherit">Акт обстеження будинку, будівлі, споруди</a></span><span class="term">від 1 дня</span><b>від 1500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/vysnovok-pro-podil-vydil/" style="color:inherit">Висновок про можливість поділу, виділення, об'єднання нерухомості</a></span><span class="term">від 1 дня</span><b>від 1500 грн</b></div>
+        <div class="row"><span><a href="{{H}}/bti/reiestratsiia-tehpasporta-yedessb/" style="color:inherit">Реєстрація техпаспорта в електронному реєстрі</a></span><span class="term">індивідуально</span><b>за домовленістю</b></div>
+        <div class="row"><span><a href="{{H}}/bti/budivelnyi-pasport/" style="color:inherit">Оформлення будівельних паспортів</a></span><span class="term">індивідуально</span><b>за домовленістю</b></div>
+        <div class="row"><span><a href="{{H}}/bti/vvedennya-v-ekspluatatsiyu/" style="color:inherit">Введення в експлуатацію, узаконення самобуду</a></span><span class="term">індивідуально</span><b>за домовленістю</b></div>
+      </div>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+        <a class="btn btn-primary" href="{{H}}/bti/tehpasport/">Усі види техпаспортів</a>
+        <span style="color:var(--ink-2);font-size:15px">Виїзд інженера на замір — по Києву та області</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПРОЦЕСС ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Як це відбувається</h2>
+      <p>Від заявки до готового документа — три кроки. Ви не стоїте в чергах і не їздите по інстанціях.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Залишаєте заявку</h3><p>Телефон, Telegram, Viber або форма на сайті. Протягом 15 хвилин передзвонимо, уточнимо об'єкт і назвемо точну ціну.</p></div>
+      <div class="step"><h3>Надсилаєте документи або приймаєте інженера</h3><p>Для оцінки достатньо фото документів у месенджер. Для техпаспорта інженер приїде на замір у зручний час — це 30–40 хвилин.</p></div>
+      <div class="step"><h3>Отримуєте готовий документ</h3><p>Забираєте в офісі на Великій Васильківській або отримуєте Новою поштою по Україні. Оплата — після отримання.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ДОКУМЕНТЫ + ПОЧЕМУ МЫ ============ -->
+<section id="docs">
+  <div class="wrap two">
+    <div>
+      <h2>Які документи потрібні</h2>
+      <p style="margin-top:12px;color:var(--ink-2)">Базовий пакет однаковий для оцінки та послуг БТІ. В окремих випадках спеціаліст може попросити додаткові.</p>
+      <ul class="docs docs-home">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F5FBF" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg><span><b>Правовстановлюючий документ</b> — договір купівлі-продажу, дарування, свідоцтво про право власності чи про спадщину</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F5FBF" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg><span><b>Технічний паспорт</b> — якщо є, навіть старий</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F5FBF" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2.5"/><path d="M14 10h4M14 14h4"/></svg><span><b>Паспорт та ІПН власника</b></span></li>
+      </ul>
+      <p style="margin-top:18px;font-size:15px;color:var(--ink-2)">Не впевнені, що маєте все потрібне? Надішліть фото документів — підкажемо безкоштовно.</p>
+    </div>
+    <div>
+      <h2>Чому звертаються до нас</h2>
+      <div class="why">
+        <div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h3>Документ, який приймуть</h3><p>Звіт відповідає чинному законодавству і зареєстрований у ФДМУ. Нотаріуси та банки працюють з нашими звітами без зауважень.</p></div></div>
+        <div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Терміни, які дотримуємо</h3><p>Називаємо строк до початку роботи і виконуємо його або швидше. Термінова оцінка — за годину.</p></div></div>
+        <div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>Один спеціаліст від початку до кінця</h3><p>Працюємо персонально: той, хто консультував, веде вашу справу до видачі документа.</p></div></div>
+        <div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12303F" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></div><div><h3>Консультуємо у вихідні та свята</h3><p>Безкоштовно відповідаємо на питання щодо документів, навіть якщо ви ще не вирішили замовляти.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПОРІВНЯННЯ ============ -->
+<section id="compare" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Чому до нас, а не в державне БТІ</h2>
+      <p>Ті самі документи, ті самі реєстри — без черг і «приходьте через два тижні».</p>
+    </div>
+    <div class="compare">
+      <div class="them"><h3>Звичайне БТІ</h3>
+        <ul><li>Черга і запис за кілька днів</li><li>Техніка чекаєте тижнями</li><li>Доплата за терміновість</li><li>Кабінети, зачинені «на обід»</li><li>Незрозумілий перелік документів</li></ul>
+        <p class="total">Підсумок: 2–4 тижні і кілька візитів</p></div>
+      <div class="us"><h3>БТІ та оцінка майна</h3>
+        <ul><li>Оцінка за 1 день, терміново — за годину</li><li>Інженер приїжджає у зручний вам час</li><li>Без доплат за терміновість</li><li>Консультації у вихідні та свята</li><li>Чек-лист документів надішлемо в месенджер</li></ul>
+        <p class="total">Підсумок: 1–3 дні, без візитів в офіс</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВІДГУКИ ============ -->
+<section id="reviews" class="process" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="rev-h">Що кажуть клієнти</h2><a class="rating" href="https://maps.app.goo.gl/bQv53M59LtN1Pe6EA" rel="noopener"><b>4.6</b><div><span class="stars" aria-hidden="true">★★★★★</span><small>11 відгуків у Google</small></div></a></div><div class="reviews"><article class="review"><span class="stars" aria-label="5 з 5">★★★★★</span><p>Годині о 16-ій скинув фото документів, оплатив через картку, о 18-ій забрав документи. Ціни ринкові. Ще буду звертатись у разі необхідності.</p><div class="who"><i aria-hidden="true">Д</i><span>Дмитро Соло · Google</span></div></article><article class="review"><span class="stars" aria-label="5 з 5">★★★★★</span><p>Дуже якісна і професійна команда, знавці своєї справи. Робили в них оцінку нерухомості, усім залишились задоволені.</p><div class="who"><i aria-hidden="true">А</i><span>Анна Тесминецкая · Google</span></div></article><article class="review"><span class="stars" aria-label="5 з 5">★★★★★</span><p>Дуже задоволена співпрацею. Зробили усе швидко та професійно, дослухаючись до моїх побажань. Раджу!</p><div class="who"><i aria-hidden="true">J</i><span>Ju Lia · Google</span></div></article></div>
+    <p style="margin-top:22px"><a href="{{H}}/vidhuky/">Усі відгуки →</a></p>
+  </div>
+</section>
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <h2 style="margin-bottom:28px">Часті питання</h2>
+    <div class="faq">
+      <details open><summary>Чи можна замовити документи дистанційно, не приїжджаючи до Києва?</summary><p>Так. Ми працюємо по всій Україні: документи для оцінки надсилаєте фото в месенджер, готовий звіт відправляємо Новою поштою за тарифами перевізника. Для техпаспорта потрібен виїзд інженера — це Київ та область.</p></details>
+      <details><summary>Скільки часу займає оцінка майна?</summary><p>За стандартних умов — до 1 дня. Якщо терміново — близько години. У складних випадках спеціаліст індивідуально називає строк після вивчення деталей.</p></details>
+      <details><summary>Скільки виготовляється техпаспорт?</summary><p>Залежно від послуги БТІ — від 1 дня. Виготовлення техпаспорта з виїздом на замір займає до 3 робочих днів.</p></details>
+      <details><summary>Навіщо реєструвати звіт у ФДМУ?</summary><p>Без реєстрації в Єдиній базі звітів Фонду держмайна звіт про оцінку недійсний, і нотаріус не зможе посвідчити угоду. Ми реєструємо кожен звіт — це вже включено у вартість.</p></details>
+      <details><summary>Коли платити?</summary><p>Після отримання готового документа. Передоплата не потрібна.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ФОРМА ============ -->
